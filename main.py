@@ -113,6 +113,6 @@ if __name__ == '__main__':
     path = input_path()
     x = preprocess(path)[0]
     print('Пометка: Файл модели должен находится в одной папке с файлом main.py!')
-    model = load('Dmitriy.joblib')
+    model = load('model.joblib')
     predict_list = model.predict(x)
     group_by_days(predict_list)
